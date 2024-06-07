@@ -4,6 +4,9 @@ This repository contains a set of scripts designed for training and evaluating d
 
 ![Riverraid Game](images/riverraid_game.gif)
 
+You can find this repository on my GitHub: [RL_Project](https://github.com/lisasth/RL_Project)
+
+
 ## Overview of project
 ### Scripts
 The scripts for the Riverraid game including training, tests, comparison, and demos can be found in the folder "scripts". This folder has 3 subfolders: comparison, demo, and training. These include:
