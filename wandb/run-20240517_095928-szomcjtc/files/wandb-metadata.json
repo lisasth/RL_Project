@@ -1,0 +1,28 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-05-17T07:59:28.835546",
+    "startedAt": "2024-05-17T07:59:28.135515",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/lisa/Documents/atari/compare_gpu.py",
+    "codePath": "compare_gpu.py",
+    "host": "MBP-von-Lisa.fritz.box",
+    "username": "lisa",
+    "executable": "/Users/lisa/anaconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 9.536983489990234
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

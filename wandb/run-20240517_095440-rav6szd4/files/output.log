@@ -1,0 +1,4 @@
+Creating and training A2C model...
+Using mps device
+Wrapping the env in a VecTransposeImage.
+Using MPS (Metal Performance Shaders)

@@ -1,0 +1,91 @@
+Setting up the DonkeyKong environment...
+Creating and training A2C model...
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+Logging to ./a2c_tensorboard/A2C_1
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 783      |
+|    ep_rew_mean        | 112      |
+| time/                 |          |
+|    fps                | 212      |
+|    iterations         | 100      |
+|    time_elapsed       | 9        |
+|    total_timesteps    | 2000     |
+| train/                |          |
+|    entropy_loss       | -2.89    |
+|    explained_variance | -0.00372 |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 99       |
+|    policy_loss        | -0.0596  |
+|    value_loss         | 0.00587  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 784      |
+|    ep_rew_mean        | 142      |
+| time/                 |          |
+|    fps                | 203      |
+|    iterations         | 200      |
+|    time_elapsed       | 19       |
+|    total_timesteps    | 4000     |
+| train/                |          |
+|    entropy_loss       | -2.89    |
+|    explained_variance | 0.313    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 199      |
+|    policy_loss        | -0.00108 |
+|    value_loss         | 0.00027  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 791      |
+|    ep_rew_mean        | 123      |
+| time/                 |          |
+|    fps                | 209      |
+|    iterations         | 300      |
+|    time_elapsed       | 28       |
+|    total_timesteps    | 6000     |
+| train/                |          |
+|    entropy_loss       | -2.89    |
+|    explained_variance | 0.696    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 299      |
+|    policy_loss        | -0.0335  |
+|    value_loss         | 0.000322 |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 776      |
+|    ep_rew_mean        | 117      |
+| time/                 |          |
+|    fps                | 213      |
+|    iterations         | 400      |
+|    time_elapsed       | 37       |
+|    total_timesteps    | 8000     |
+| train/                |          |
+|    entropy_loss       | -2.88    |
+|    explained_variance | 0.52     |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 399      |
+|    policy_loss        | 0.058    |
+|    value_loss         | 0.00388  |
+------------------------------------
+------------------------------------
+| rollout/              |          |
+|    ep_len_mean        | 771      |
+|    ep_rew_mean        | 113      |
+| time/                 |          |
+|    fps                | 214      |
+|    iterations         | 500      |
+|    time_elapsed       | 46       |
+|    total_timesteps    | 10000    |
+| train/                |          |
+|    entropy_loss       | -2.87    |
+|    explained_variance | 0.709    |
+|    learning_rate      | 0.0007   |
+|    n_updates          | 499      |
+|    policy_loss        | 0.0256   |
+|    value_loss         | 0.0009   |
+------------------------------------
+Saving trained A2C model...

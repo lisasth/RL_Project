@@ -1,0 +1,104 @@
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+Logging to ./dqn_tensorboard/DQN_1
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 1636     |
+|    time_elapsed     | 1        |
+|    total_timesteps  | 2954     |
+----------------------------------
+/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/buffers.py:229: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 201.62GB > 4.82GB
+  warnings.warn(
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 1612     |
+|    time_elapsed     | 3        |
+|    total_timesteps  | 6292     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 1665     |
+|    time_elapsed     | 5        |
+|    total_timesteps  | 9734     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 16       |
+|    fps              | 1685     |
+|    time_elapsed     | 7        |
+|    total_timesteps  | 12753    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 20       |
+|    fps              | 1693     |
+|    time_elapsed     | 9        |
+|    total_timesteps  | 15849    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 24       |
+|    fps              | 1703     |
+|    time_elapsed     | 11       |
+|    total_timesteps  | 18873    |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 28       |
+|    fps              | 1706     |
+|    time_elapsed     | 13       |
+|    total_timesteps  | 22378    |
+----------------------------------
+/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/buffers.py:229: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 201.62GB > 4.20GB
+  warnings.warn(
+/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:364: UserWarning: [33mWARN: No render fps was declared in the environment (env.metadata['render_fps'] is None or not defined), rendering may occur at inconsistent fps.
+  logger.warn(
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/environment_test.py", line 81, in <module>
+    obs, rewards, dones, info = env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 197, in step
+    return self.step_wait()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 298, in step
+    return self._get_obs(), reward, is_terminal, is_truncated, self._get_info()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 324, in _get_obs
+    return self.ale.getScreenRGB()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/environment_test.py", line 81, in <module>
+    obs, rewards, dones, info = env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 197, in step
+    return self.step_wait()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 298, in step
+    return self._get_obs(), reward, is_terminal, is_truncated, self._get_info()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 324, in _get_obs
+    return self.ale.getScreenRGB()
+KeyboardInterrupt

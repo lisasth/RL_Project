@@ -1,0 +1,145 @@
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+-----------------------------
+| time/              |      |
+|    fps             | 454  |
+|    iterations      | 1    |
+|    time_elapsed    | 4    |
+|    total_timesteps | 2048 |
+-----------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 185         |
+|    iterations           | 2           |
+|    time_elapsed         | 22          |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.010539317 |
+|    clip_fraction        | 0.0543      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.88       |
+|    explained_variance   | 0.00123     |
+|    learning_rate        | 0.0001      |
+|    loss                 | 94.8        |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.00576    |
+|    value_loss           | 165         |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 159         |
+|    iterations           | 3           |
+|    time_elapsed         | 38          |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.013491249 |
+|    clip_fraction        | 0.0822      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.87       |
+|    explained_variance   | 0.105       |
+|    learning_rate        | 0.0001      |
+|    loss                 | 34.7        |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.00868    |
+|    value_loss           | 170         |
+-----------------------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 149         |
+|    iterations           | 4           |
+|    time_elapsed         | 54          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.008241904 |
+|    clip_fraction        | 0.0467      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.85       |
+|    explained_variance   | 0.187       |
+|    learning_rate        | 0.0001      |
+|    loss                 | 88.2        |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.00487    |
+|    value_loss           | 162         |
+-----------------------------------------
+------------------------------------------
+| time/                   |              |
+|    fps                  | 144          |
+|    iterations           | 5            |
+|    time_elapsed         | 70           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0119746085 |
+|    clip_fraction        | 0.0487       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.84        |
+|    explained_variance   | 0.109        |
+|    learning_rate        | 0.0001       |
+|    loss                 | 99.3         |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.00784     |
+|    value_loss           | 200          |
+------------------------------------------
+Model: PPO, Avg Reward: 0.0
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/buffers.py:229: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 201.62GB > 3.81GB
+  warnings.warn(
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 1794     |
+|    time_elapsed     | 1        |
+|    total_timesteps  | 3233     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 1805     |
+|    time_elapsed     | 3        |
+|    total_timesteps  | 6236     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 1800     |
+|    time_elapsed     | 5        |
+|    total_timesteps  | 9068     |
+----------------------------------
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/models_compare.py", line 70, in <module>
+    train_and_evaluate(DQN, "DQN", env, config)
+  File "/Users/lisa/Documents/atari/models_compare.py", line 55, in train_and_evaluate
+    obs, reward, done, info = env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 197, in step
+    return self.step_wait()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 294, in step
+    reward += self.ale.act(action)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/models_compare.py", line 70, in <module>
+    train_and_evaluate(DQN, "DQN", env, config)
+  File "/Users/lisa/Documents/atari/models_compare.py", line 55, in train_and_evaluate
+    obs, reward, done, info = env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 197, in step
+    return self.step_wait()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 294, in step
+    reward += self.ale.act(action)
+KeyboardInterrupt

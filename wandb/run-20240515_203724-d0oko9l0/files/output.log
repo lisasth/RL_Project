@@ -1,0 +1,256 @@
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+Logging to ./ppo_tensorboard/PPO_1
+-----------------------------
+| time/              |      |
+|    fps             | 199  |
+|    iterations      | 1    |
+|    time_elapsed    | 10   |
+|    total_timesteps | 2048 |
+-----------------------------
+-----------------------------------------
+| time/                   |             |
+|    fps                  | 33          |
+|    iterations           | 2           |
+|    time_elapsed         | 123         |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.027377877 |
+|    clip_fraction        | 0.3         |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.86       |
+|    explained_variance   | -0.000775   |
+|    learning_rate        | 0.0003      |
+|    loss                 | 15.3        |
+|    n_updates            | 10          |
+|    policy_gradient_loss | 0.0157      |
+|    value_loss           | 92.1        |
+-----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 25         |
+|    iterations           | 3          |
+|    time_elapsed         | 236        |
+|    total_timesteps      | 6144       |
+| train/                  |            |
+|    approx_kl            | 0.10979222 |
+|    clip_fraction        | 0.565      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.76      |
+|    explained_variance   | 0.138      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 4.51       |
+|    n_updates            | 20         |
+|    policy_gradient_loss | 0.0228     |
+|    value_loss           | 52.6       |
+----------------------------------------
+---------------------------------------
+| time/                   |           |
+|    fps                  | 23        |
+|    iterations           | 4         |
+|    time_elapsed         | 348       |
+|    total_timesteps      | 8192      |
+| train/                  |           |
+|    approx_kl            | 0.1110979 |
+|    clip_fraction        | 0.587     |
+|    clip_range           | 0.2       |
+|    entropy_loss         | -2.6      |
+|    explained_variance   | 0.336     |
+|    learning_rate        | 0.0003    |
+|    loss                 | 23.4      |
+|    n_updates            | 30        |
+|    policy_gradient_loss | 0.047     |
+|    value_loss           | 75        |
+---------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 22         |
+|    iterations           | 5          |
+|    time_elapsed         | 459        |
+|    total_timesteps      | 10240      |
+| train/                  |            |
+|    approx_kl            | 0.11831645 |
+|    clip_fraction        | 0.563      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.58      |
+|    explained_variance   | 0.542      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 17.9       |
+|    n_updates            | 40         |
+|    policy_gradient_loss | 0.0203     |
+|    value_loss           | 66.4       |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 21         |
+|    iterations           | 6          |
+|    time_elapsed         | 571        |
+|    total_timesteps      | 12288      |
+| train/                  |            |
+|    approx_kl            | 0.13119838 |
+|    clip_fraction        | 0.636      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.56      |
+|    explained_variance   | 0.374      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 13.8       |
+|    n_updates            | 50         |
+|    policy_gradient_loss | 0.00655    |
+|    value_loss           | 27.6       |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 20         |
+|    iterations           | 7          |
+|    time_elapsed         | 683        |
+|    total_timesteps      | 14336      |
+| train/                  |            |
+|    approx_kl            | 0.23232555 |
+|    clip_fraction        | 0.615      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.51      |
+|    explained_variance   | 0.512      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 6.95       |
+|    n_updates            | 60         |
+|    policy_gradient_loss | 0.0305     |
+|    value_loss           | 52.5       |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 20         |
+|    iterations           | 8          |
+|    time_elapsed         | 792        |
+|    total_timesteps      | 16384      |
+| train/                  |            |
+|    approx_kl            | 0.18115492 |
+|    clip_fraction        | 0.568      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.46      |
+|    explained_variance   | 0.613      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 15.2       |
+|    n_updates            | 70         |
+|    policy_gradient_loss | 0.0101     |
+|    value_loss           | 33.2       |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 20         |
+|    iterations           | 9          |
+|    time_elapsed         | 904        |
+|    total_timesteps      | 18432      |
+| train/                  |            |
+|    approx_kl            | 0.27456352 |
+|    clip_fraction        | 0.67       |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.3       |
+|    explained_variance   | 0.524      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 4.88       |
+|    n_updates            | 80         |
+|    policy_gradient_loss | 0.0416     |
+|    value_loss           | 52.8       |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 20         |
+|    iterations           | 10         |
+|    time_elapsed         | 1018       |
+|    total_timesteps      | 20480      |
+| train/                  |            |
+|    approx_kl            | 0.37497377 |
+|    clip_fraction        | 0.648      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.31      |
+|    explained_variance   | 0.618      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 24.8       |
+|    n_updates            | 90         |
+|    policy_gradient_loss | 0.0196     |
+|    value_loss           | 43.3       |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 19         |
+|    iterations           | 11         |
+|    time_elapsed         | 1130       |
+|    total_timesteps      | 22528      |
+| train/                  |            |
+|    approx_kl            | 0.45085454 |
+|    clip_fraction        | 0.725      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.04      |
+|    explained_variance   | 0.628      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 7.08       |
+|    n_updates            | 100        |
+|    policy_gradient_loss | 0.0552     |
+|    value_loss           | 29         |
+----------------------------------------
+----------------------------------------
+| time/                   |            |
+|    fps                  | 19         |
+|    iterations           | 12         |
+|    time_elapsed         | 1243       |
+|    total_timesteps      | 24576      |
+| train/                  |            |
+|    approx_kl            | 0.28299436 |
+|    clip_fraction        | 0.562      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -1.85      |
+|    explained_variance   | 0.298      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 8.43       |
+|    n_updates            | 110        |
+|    policy_gradient_loss | 0.00557    |
+|    value_loss           | 24.6       |
+----------------------------------------
+--------------------------------------
+| time/                   |          |
+|    fps                  | 19       |
+|    iterations           | 13       |
+|    time_elapsed         | 1357     |
+|    total_timesteps      | 26624    |
+| train/                  |          |
+|    approx_kl            | 0.277372 |
+|    clip_fraction        | 0.597    |
+|    clip_range           | 0.2      |
+|    entropy_loss         | -1.79    |
+|    explained_variance   | 0.784    |
+|    learning_rate        | 0.0003   |
+|    loss                 | 3.29     |
+|    n_updates            | 120      |
+|    policy_gradient_loss | 0.0231   |
+|    value_loss           | 23.3     |
+--------------------------------------
+/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/utils/passive_env_checker.py:364: UserWarning: [33mWARN: No render fps was declared in the environment (env.metadata['render_fps'] is None or not defined), rendering may occur at inconsistent fps.
+  logger.warn(
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/environment_test.py", line 81, in <module>
+    obs, rewards, dones, info = env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 197, in step
+    return self.step_wait()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 294, in step
+    reward += self.ale.act(action)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/environment_test.py", line 81, in <module>
+    obs, rewards, dones, info = env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/base_vec_env.py", line 197, in step
+    return self.step_wait()
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/vec_env/dummy_vec_env.py", line 58, in step_wait
+    obs, self.buf_rews[env_idx], terminated, truncated, self.buf_infos[env_idx] = self.envs[env_idx].step(
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/shimmy/atari_env.py", line 294, in step
+    reward += self.ale.act(action)
+KeyboardInterrupt

@@ -1,0 +1,94 @@
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+Logging to ./dqn_tensorboard/DQN_3
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 4        |
+|    fps              | 1794     |
+|    time_elapsed     | 1        |
+|    total_timesteps  | 2864     |
+----------------------------------
+/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/buffers.py:229: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 10.08GB > 4.34GB
+  warnings.warn(
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 8        |
+|    fps              | 1710     |
+|    time_elapsed     | 3        |
+|    total_timesteps  | 5817     |
+----------------------------------
+----------------------------------
+| rollout/            |          |
+|    exploration_rate | 0.05     |
+| time/               |          |
+|    episodes         | 12       |
+|    fps              | 1727     |
+|    time_elapsed     | 5        |
+|    total_timesteps  | 8833     |
+----------------------------------
+/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/buffers.py:229: UserWarning: This system does not have apparently enough memory to store the complete replay buffer 10.08GB > 3.85GB
+  warnings.warn(
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/environment_test.py", line 137, in <module>
+    action, _states = model.predict(obs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/dqn.py", line 255, in predict
+    action, state = self.policy.predict(observation, state, episode_start, deterministic)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/policies.py", line 349, in predict
+    actions = self._predict(observation, deterministic=deterministic)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/policies.py", line 184, in _predict
+    return self.q_net._predict(obs, deterministic=deterministic)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/policies.py", line 69, in _predict
+    q_values = self(observation)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/policies.py", line 66, in forward
+    return self.q_net(self.extract_features(obs, self.features_extractor))
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/policies.py", line 131, in extract_features
+    return features_extractor(preprocessed_obs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/torch_layers.py", line 106, in forward
+    return self.linear(self.cnn(observations))
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/Users/lisa/Documents/atari/environment_test.py", line 137, in <module>
+    action, _states = model.predict(obs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/dqn.py", line 255, in predict
+    action, state = self.policy.predict(observation, state, episode_start, deterministic)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/policies.py", line 349, in predict
+    actions = self._predict(observation, deterministic=deterministic)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/policies.py", line 184, in _predict
+    return self.q_net._predict(obs, deterministic=deterministic)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/policies.py", line 69, in _predict
+    q_values = self(observation)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/dqn/policies.py", line 66, in forward
+    return self.q_net(self.extract_features(obs, self.features_extractor))
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/policies.py", line 131, in extract_features
+    return features_extractor(preprocessed_obs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/stable_baselines3/common/torch_layers.py", line 106, in forward
+    return self.linear(self.cnn(observations))
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/lisa/anaconda3/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

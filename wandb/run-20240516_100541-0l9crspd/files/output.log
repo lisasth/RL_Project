@@ -1,0 +1,38 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Creating and training PPO model...
+Using cpu device
+Wrapping the env in a VecTransposeImage.
+Logging to ./ppo_tensorboard/PPO_2
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 759      |
+|    ep_rew_mean     | 93.2     |
+| time/              |          |
+|    fps             | 390      |
+|    iterations      | 1        |
+|    time_elapsed    | 20       |
+|    total_timesteps | 8192     |
+---------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 750        |
+|    ep_rew_mean          | 80.2       |
+| time/                   |            |
+|    fps                  | 99         |
+|    iterations           | 2          |
+|    time_elapsed         | 164        |
+|    total_timesteps      | 16384      |
+| train/                  |            |
+|    approx_kl            | 0.02283497 |
+|    clip_fraction        | 0.142      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.88      |
+|    explained_variance   | -0.111     |
+|    learning_rate        | 0.0003     |
+|    loss                 | -0.0679    |
+|    n_updates            | 10         |
+|    policy_gradient_loss | -0.0293    |
+|    value_loss           | 0.0347     |
+----------------------------------------
+Saving trained PPO model...
